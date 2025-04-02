@@ -698,3 +698,79 @@ button:hover {
 .top-contact a:hover {
     color: #ffd700; /* Gold color on hover */
 }
+/* 🌍 Make Images & Sections Responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 50px 5%;
+}
+
+/* 🏠 Responsive Header */
+header {
+    flex-wrap: wrap;
+    padding: 10px 5%;
+}
+
+nav ul {
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+/* 📞 Responsive Top Contact */
+.top-contact {
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px;
+}
+
+/* 📱 Mobile Responsive Design */
+@media (max-width: 768px) {
+    /* Make text smaller */
+    .hero h1, .hero h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    /* Stack navigation links */
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Center header content */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Adjust buttons & inputs */
+    button, input, select, textarea {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* Make the gallery & news sections flexible */
+    .gallery, .news, .about, .admission, .contact {
+        padding: 40px 10px;
+    }
+}
+
+/* 📺 Tablet & Small Laptop Screens */
+@media (max-width: 1024px) {
+    .hero h1, .hero h2 {
+        font-size: 36px;
+    }
+}
+
